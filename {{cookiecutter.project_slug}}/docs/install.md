@@ -49,7 +49,7 @@ To obtain a given release use the tagged versions.
 git checkout tags/<version> -b master
 ```
 
-## Remote Installation
+## Remote Run
 
 You can also make a user-wise installation of the pipeline, or run it
 remotely.
