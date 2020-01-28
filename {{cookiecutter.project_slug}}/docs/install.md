@@ -51,7 +51,7 @@ git checkout tags/<version> -b master
 
 ## Remote Installation
 
-You can also make a user-wise installation of the pipeline, or run it 
+You can also make a user-wise installation of the pipeline, or run it
 remotely.
 
 If pulling (install), nextflow will create a directory in your `$HOME` and
@@ -70,4 +70,3 @@ nextflow run {{cookiecutter.github_user}}/{{cookiecutter.project_slug}} [OPT]
 
 If you choose to install the pipeline like this you should run it like
 `nextflow run {{cookiecutter.github_user}}/{{cookiecutter.project_slug}} [OPT]`
-
