@@ -14,7 +14,7 @@ To obtain updated guidelines of how to install nextflow follow visit
 Basic instructions:
 
 ```bash
-# make sure java is 1.8 or higher
+# make sure java version is 1.8 or higher
 java -version
 cd PATH/in/your/bin
 # this creates a nextflow executable
