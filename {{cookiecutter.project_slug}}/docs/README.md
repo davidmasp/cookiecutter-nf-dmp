@@ -1,4 +1,4 @@
-# {{project_slug}}: Documentation
+# {{cookiecutter.project_slug}}: Documentation
 
 The regionmut-nf docs are split in the following files:
 

@@ -1,4 +1,4 @@
-# {{project_slug}}: Installation
+# {{cookiecutter.project_slug}}: Installation
 
 ## Nextflow
 
@@ -6,7 +6,7 @@
 the execution of highly customizable and complex bioinformatic pipelines in
 any HPC system and the cloud.
 
-The {{project_slug}} pipeline uses nextflow as pipeline framework so in
+The {{cookiecutter.project_slug}} pipeline uses nextflow as pipeline framework so in
 order to run this pipeline you will need to install the nextflow first.
 To obtain updated guidelines of how to install nextflow follow visit
  [here](https://www.nextflow.io/).
@@ -32,7 +32,7 @@ In order to use a local insallation you should clone this repository
 and update the configuration options.
 
 ```bash
-git clone https://github.com/{{github_user}}/{{project_slug}}
+git clone https://github.com/{{github_user}}/{{cookiecutter.project_slug}}
 ```
 
 This install option is suited if you need to adapt the configuration files
@@ -62,12 +62,12 @@ is the latest. For more detailed info, see
 
 ```bash
 # for user-wide install
-nextflow pull {{github_user}}/{{project_slug}}
+nextflow pull {{github_user}}/{{cookiecutter.project_slug}}
 
 # for directly running the pipeline from github
-nextflow run {{github_user}}/{{project_slug}} [OPT]
+nextflow run {{github_user}}/{{cookiecutter.project_slug}} [OPT]
 ```
 
 If you choose to install the pipeline like this you should run it like
-`nextflow run {{github_user}}/{{project_slug}} [OPT]`
+`nextflow run {{github_user}}/{{cookiecutter.project_slug}} [OPT]`
 
