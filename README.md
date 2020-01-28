@@ -40,6 +40,29 @@ scale with more directories easily.
 
 These intructions are based in the following
 [workflow](https://github.com/cookiecutter/cookiecutter/issues/784#issuecomment-283529086).
+This will likely get more automatized in the future.
+
+This assumes, the generated project dir is a git repo and already has some
+commits.
+
+```bash
+# create a template branch
+git checkout -b template
+# re-compile the template
+cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .cookiecutter.yaml --no-input --overwrite-if-exists
+# the original file
+git checkout develop
+# here you will need to manually solve conflicts
+git merge template
+```
+
+or if you are using git flow:
+
+```bash
+git flow feature start updateTemplate
+cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .cookiecutter.yaml --no-input --overwrite-if-exists
+git flow feature finish
+```
 
 ## Quick links
 
