@@ -54,27 +54,29 @@ This will likely get more automatized in the future.
 This assumes, the generated project dir is a git repo and already has some
 commits.
 
+First you need to create a template branch. If you don't want to delete custom
+updates in the template you should checkout from the last commit that updated
+the cookiecutter template. Basically use the first commit.
+
+The following is an example workflow.
+
 ```bash
-# create a template branch
-git checkout -b template
+git checkout -b template <sha1-of-first-commit>
+
 # re-compile the template
 cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .cookiecutter.yaml --no-input --overwrite-if-exists
+
+# add and commit changes
 git add .
 git commit -m 'update template'
-# the original file
+
+# goback to the original branch
 git checkout develop
+
 # here you will need to manually solve conflicts
-git merge template
-```
-
-or if you are using git flow.
-
-```bash
-git flow feature start updateTemplate
-cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .cookiecutter.yaml --no-input --overwrite-if-exists
-git add .
-git commit -m 'update template'
-git flow feature finish
+git merge --no-ff template
+# if you don't delete the template branch you can use it later for further
+# updates
 ```
 
 It is important to highlight that we need a previous commit before the update.
