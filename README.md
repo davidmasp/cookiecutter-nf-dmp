@@ -23,6 +23,15 @@ and then just run:
 cookiecutter gh:davidmasp/cookiecutter-nf-dmp
 ```
 
+or if using git flow:
+
+```bash
+cookiecutter gh:davidmasp/cookiecutter-nf-dmp
+git flow init
+git add .
+git commit -m 'initial commit'
+```
+
 ## docs
 
 ### Structure

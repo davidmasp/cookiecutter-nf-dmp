@@ -17,3 +17,8 @@ different folders containing different output types.
 | outputA | .tsv | Table for output A |
 | outputB | .csv | Csv file for output B |
 |  |  |  |
+
+## TMP folder
+
+Some pipelines in development state will include a `TMP` folder which contains
+intermediate files for debugging.

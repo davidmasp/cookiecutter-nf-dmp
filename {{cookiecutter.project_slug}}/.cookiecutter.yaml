@@ -1,7 +1,7 @@
 
 # this will store the options when this cookiecutter was first built
 default_context:
-    project_name: {{cookiecutter.project_slug}}
+    project_name: {{cookiecutter.project}}
     author_name: {{cookiecutter.author_name}}
     github_user: {{cookiecutter.github_user}}
     aim: {{cookiecutter.aim}}
