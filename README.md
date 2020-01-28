@@ -56,7 +56,7 @@ git checkout develop
 git merge template
 ```
 
-or if you are using git flow:
+or if you are using git flow.
 
 ```bash
 git flow feature start updateTemplate
@@ -64,6 +64,7 @@ cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .coo
 git flow feature finish
 ```
 
+It is important to highlight that we need a previous commit before the update.
 
 ## Quick links
 
