@@ -15,7 +15,8 @@ through a comma-separated list such as:
 nextflow run {{cookiecutter.github_user}}/{{cookiecutter.project_slug}} -profile slurm,conda
 ```
 
-The profiles can not be combined within types.
+The profiles can not be combined within types, only execution with
+environtments.
 
 ### Slurm
 
