@@ -32,14 +32,30 @@ git add .
 git commit -m 'initial commit'
 ```
 
-## docs
+## Docs
 
 ### Structure
 
 An empty file structure can look like this:
 
 ```bash
-# TODO
+>>> tree .
+.
+|-- build_singularity.sh
+|-- CHANGELOG.md
+|-- conf
+|   `-- slurm.config
+|-- docs
+|   |-- configuration.md
+|   |-- install.md
+|   |-- output.md
+|   |-- README.md
+|   |-- troubleshooting.md
+|   `-- usage.md
+|-- nextflow.config
+`-- test_pipeline.sh
+
+2 directories, 11 files
 ```
 
 Note though that this is a minimal set up, and this template is thought to
