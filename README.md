@@ -59,6 +59,8 @@ commits.
 git checkout -b template
 # re-compile the template
 cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .cookiecutter.yaml --no-input --overwrite-if-exists
+git add .
+git commit -m 'update template'
 # the original file
 git checkout develop
 # here you will need to manually solve conflicts
@@ -70,6 +72,8 @@ or if you are using git flow.
 ```bash
 git flow feature start updateTemplate
 cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .cookiecutter.yaml --no-input --overwrite-if-exists
+git add .
+git commit -m 'update template'
 git flow feature finish
 ```
 
