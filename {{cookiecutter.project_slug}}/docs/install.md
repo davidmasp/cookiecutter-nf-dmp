@@ -32,7 +32,7 @@ In order to use a local insallation you should clone this repository
 and update the configuration options.
 
 ```bash
-git clone https://github.com/{{github_user}}/{{cookiecutter.project_slug}}
+git clone https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}
 ```
 
 This install option is suited if you need to adapt the configuration files
@@ -62,12 +62,12 @@ is the latest. For more detailed info, see
 
 ```bash
 # for user-wide install
-nextflow pull {{github_user}}/{{cookiecutter.project_slug}}
+nextflow pull {{cookiecutter.github_user}}/{{cookiecutter.project_slug}}
 
 # for directly running the pipeline from github
-nextflow run {{github_user}}/{{cookiecutter.project_slug}} [OPT]
+nextflow run {{cookiecutter.github_user}}/{{cookiecutter.project_slug}} [OPT]
 ```
 
 If you choose to install the pipeline like this you should run it like
-`nextflow run {{github_user}}/{{cookiecutter.project_slug}} [OPT]`
+`nextflow run {{cookiecutter.github_user}}/{{cookiecutter.project_slug}} [OPT]`
 
