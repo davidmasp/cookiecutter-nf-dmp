@@ -64,6 +64,7 @@ cookiecutter gh:davidmasp/cookiecutter-nf-dmp --output-dir .. --config-file .coo
 git flow feature finish
 ```
 
+
 ## Quick links
 
 * [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)
