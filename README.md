@@ -34,8 +34,14 @@ An empty file structure can look like this:
 .
 |-- build_singularity.sh
 |-- CHANGELOG.md
+|-- conda_env
+|   `-- environment.yml
 |-- conf
-|   `-- slurm.config
+|   |-- base.conf
+|   |-- conda.conf
+|   |-- singularity.conf
+|   |-- slurm.config
+|   `-- test.config
 |-- docs
 |   |-- configuration.md
 |   |-- install.md
@@ -43,10 +49,13 @@ An empty file structure can look like this:
 |   |-- README.md
 |   |-- troubleshooting.md
 |   `-- usage.md
+|-- LICENSE
 |-- nextflow.config
+|-- singularity_img
+|   `-- environment.def
 `-- test_pipeline.sh
 
-2 directories, 11 files
+4 directories, 18 files
 ```
 
 Note though that this is a minimal set up, and this template is thought to
