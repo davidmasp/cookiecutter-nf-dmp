@@ -1,6 +1,6 @@
 # {{cookiecutter.project_slug}}: Documentation
 
-The regionmut-nf docs are split in the following files:
+The {{cookiecutter.project_slug}} docs are split in the following files:
 
 1. [Installation](install.md)
 2. [Configuration](configuration.md)
