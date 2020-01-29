@@ -94,3 +94,12 @@ It is important to highlight that we need a previous commit before the update.
 * [nextflow](https://www.nextflow.io/)
 * [nf-core](https://nf-co.re/)
 * [nextflow docs](https://www.nextflow.io/docs/latest/index.html)
+
+## Credit
+
+This pipeline template is hugely influenced by the [nf-core](https://nf-co.re/)
+principles and code. That is indeed a better framework to develop
+pipelines for production and processing raw data.
+My aim is to generate a simplified versions of those standards that can make it
+easier for its use in a less strict setting such as a personal
+analysis pipelines.
