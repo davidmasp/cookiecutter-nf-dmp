@@ -1,0 +1,8 @@
+{
+  "project_name": "project",
+  "author_name": "DMP",
+  "github_user": "davidmasp",
+  "aim": "The aim of this pipeline is to ...",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}-nf",
+  "condaCacheDir": "$HOME/nxf_conda_env"
+}

@@ -1,0 +1,8 @@
+# nextflow files
+.nextflow*
+work/
+
+# images and containers
+*.sif
+*.simg
+*.img
