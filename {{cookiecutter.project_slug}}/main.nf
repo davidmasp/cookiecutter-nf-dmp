@@ -5,7 +5,7 @@
 
 {{cookiecutter.project_slug}} Pipeline.
 
-by: {{cookiecutter.author}}
+by: {{cookiecutter.author_name}}
 aim: {{cookiecutter.aim}}
 Documentation: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}
 */
