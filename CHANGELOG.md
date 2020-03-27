@@ -8,9 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added 
 
+- added a minimal README.md
+- added a channel section in main.nf
+- added cpu/memory modes
+
 ### Changed
 
 - fixed bug in author (main.nf)
+- modified `.conf` extensions to `.config`
 
 ### Removed
 

@@ -6,7 +6,7 @@
 {{cookiecutter.project_slug}} Pipeline.
 
 by: {{cookiecutter.author_name}}
-aim: {{cookiecutter.aim}}
+aim: The pipeline aims to {{cookiecutter.aim}}
 Documentation: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}
 */
 
@@ -41,11 +41,25 @@ params.argsB = "test"
 params.verbose = false
 
 /*
+ * CHANNELS
+ */
+
+Channel
+    .fromPath(params.argsA)
+    .splitCsv(header:true)
+    .map{ row-> tuple(row.sampleId, file(row.read1), file(row.read2)) }
+    .set { samples_ch }
+
+/*
  * STEP 1 - XXXX
  */
 
 process procesA {
   tag "${name}"
+
+  label 'cpus_5'
+
+  publishDir "${params.outdir}/TMP"
 
   input:
   set val(name), file(input) from input_dir
