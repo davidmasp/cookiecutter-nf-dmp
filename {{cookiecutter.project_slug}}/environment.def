@@ -12,7 +12,7 @@ From:nfcore/base
     export PATH
 
 %files
-    ../conda_envs/environment.yml /
+    ./environment.yml /
 
 %post
     /opt/conda/bin/conda env create -f /environment.yml
